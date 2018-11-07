@@ -1,0 +1,42 @@
+{
+  "name": "aws-test",
+  "version": "0.0.0",
+  "description": "My Project",
+  "esy": {
+    "build": "refmterr dune build -f j",
+    "release": { "releasedBinaries": [ "AwsTestApp.exe" ] }
+  },
+  "buildDirs": {
+    "test": {
+      "require": [ "aws-test.lib" ],
+      "main": "TestAwsTest",
+      "name": "TestAwsTest.exe"
+    },
+    "library": { 
+      "name": "aws-test.lib", 
+      "require": ["aws-s3", "aws-s3-lwt"],
+      "namespace": "AwsTest" 
+    },
+    "executable": {
+      "require": [ "aws-test.lib", "pcre" ],
+      "main": "AwsTestApp",
+      "name": "AwsTestApp.exe"
+    }
+  },
+  "scripts": { 
+    "test": "esy x TestAwsTest.exe",
+    "format": "refmt --in-place library/*.re" },
+  "dependencies": {
+    "@esy-ocaml/reason": "*",
+    "@opam/aws-s3": "4.1.0",
+    "@opam/aws-s3-lwt": "4.1.0",
+    "@opam/dune": "1.4.0",
+    "ocaml": "~4.6.0",
+    "refmterr": "*"
+  },
+  "devDependencies": { "@esy-ocaml/merlin": "*" },
+  "resolutions": {
+    "@opam/conf-libpcre": "github:joprice/pcre-ocaml#0d202406e3641012a8b6bb2592b1ceeac2076a79"
+    /*"@opam/conf-libpcre": "link:/Users/josephprice/dev/github.com/joprice/pcre-ocaml"*/
+  }
+}
