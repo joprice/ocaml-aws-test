@@ -21,11 +21,11 @@ let run = (~bucket) => {
         }
         | Error(error) => 
             switch(error) {
-                | Redirect(endpoint) => print_endline("redirect")
+                | Redirect(_endpoint) => print_endline("redirect")
                 | Not_found => print_endline("not found")
                 | Failed(ex) => raise(ex)
                 | Throttled => print_endline("throttled")
-                | Unknown(code, message) => print_endline(message)
+                | Unknown(_code, message) => print_endline(message)
             }
     )
 }

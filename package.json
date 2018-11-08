@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "My Project",
   "esy": {
-    "build": "refmterr dune build -f j",
+    "build": "refmterr dune build -j 4",
     "release": { "releasedBinaries": [ "AwsTestApp.exe" ] }
   },
   "buildDirs": {
@@ -36,7 +36,7 @@
   },
   "devDependencies": { "@esy-ocaml/merlin": "*" },
   "resolutions": {
-    "@opam/conf-libpcre": "github:joprice/pcre-ocaml#0d202406e3641012a8b6bb2592b1ceeac2076a79"
+    "@opam/conf-libpcre": "github:joprice/pcre-ocaml#f563fdffa84b0dbe2c3f03998d897b5854e26805"
     /*"@opam/conf-libpcre": "link:/Users/josephprice/dev/github.com/joprice/pcre-ocaml"*/
   }
 }
