@@ -25,7 +25,8 @@
   },
   "scripts": { 
     "test": "esy x TestAwsTest.exe",
-    "format": "refmt --in-place library/*.re" },
+    "format": "./scripts/format"
+  },
   "dependencies": {
     "@esy-ocaml/reason": "*",
     "@opam/aws-s3": "4.1.0",
@@ -36,7 +37,6 @@
   },
   "devDependencies": { "@esy-ocaml/merlin": "*" },
   "resolutions": {
-    "@opam/conf-libpcre": "github:joprice/pcre-ocaml#f563fdffa84b0dbe2c3f03998d897b5854e26805"
-    /*"@opam/conf-libpcre": "link:/Users/josephprice/dev/github.com/joprice/pcre-ocaml"*/
+    "@opam/conf-libpcre": "github:joprice/pcre-ocaml#50336e08307aff2df2bce8a1606f26f0cfc0f6c0"
   }
 }

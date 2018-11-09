@@ -1,5 +1,5 @@
 {
-  "hash": "66bab732d892f789e464274ae799d0f1",
+  "hash": "87a64304dda4b244ed84525a60907190",
   "root": "root@path:./package.json",
   "node": {
     "root@path:./package.json": {
@@ -497,7 +497,7 @@
       "dependencies": [
         "@esy-ocaml/substs@0.0.1", "@opam/base@opam:v0.11.1",
         "@opam/base-bytes@opam:base",
-        "@opam/conf-libpcre@github:joprice/pcre-ocaml#f563fdffa84b0dbe2c3f03998d897b5854e26805",
+        "@opam/conf-libpcre@github:joprice/pcre-ocaml#50336e08307aff2df2bce8a1606f26f0cfc0f6c0",
         "@opam/dune@opam:1.4.0", "ocaml@4.6.7"
       ]
     },
@@ -999,13 +999,13 @@
       },
       "dependencies": [ "@esy-ocaml/substs@0.0.1" ]
     },
-    "@opam/conf-libpcre@github:joprice/pcre-ocaml#f563fdffa84b0dbe2c3f03998d897b5854e26805": {
+    "@opam/conf-libpcre@github:joprice/pcre-ocaml#50336e08307aff2df2bce8a1606f26f0cfc0f6c0": {
       "record": {
         "name": "@opam/conf-libpcre",
         "version":
-          "github:joprice/pcre-ocaml#f563fdffa84b0dbe2c3f03998d897b5854e26805",
+          "github:joprice/pcre-ocaml#50336e08307aff2df2bce8a1606f26f0cfc0f6c0",
         "source":
-          "github:joprice/pcre-ocaml#f563fdffa84b0dbe2c3f03998d897b5854e26805",
+          "github:joprice/pcre-ocaml#50336e08307aff2df2bce8a1606f26f0cfc0f6c0",
         "files": [],
         "opam": null
       },

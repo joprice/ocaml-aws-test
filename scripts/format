@@ -1,0 +1,1 @@
+refmt --in-place ./executable/**.re ./library/**.re
